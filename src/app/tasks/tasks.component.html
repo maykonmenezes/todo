@@ -1,0 +1,9 @@
+<h2>Minhas Tarefas</h2>
+<ul class="tasks">
+  <li *ngFor="let task of tasks"
+    [class.selected]="task === selectedTask"
+    (click)="onSelect(task)">
+    <span class="badge">{{task.id}}</span> {{task.name}}
+  </li>
+</ul>
+ 
